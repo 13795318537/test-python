@@ -6,6 +6,7 @@ def select():
     s = select_money
     return s
 
+
 if __name__ == '__main__':
     select()
     
