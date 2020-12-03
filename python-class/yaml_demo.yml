@@ -1,0 +1,16 @@
+cat: &cat
+  name : Tom1
+  color : yollow
+  age : 11
+  gender : man
+  hair : black
+
+dog: &dog
+  name : dog1
+  color : yollow
+  age : 110
+  gender : nv
+  hair : red
+
+default:
+  <<: *dog
