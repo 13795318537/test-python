@@ -1,7 +1,6 @@
 import pytest
 import yaml
 
-from test_yaml1 import calc
 from test_yaml1.calc import Calculator
 
 with open("calc_y.yml", encoding='utf-8') as f:

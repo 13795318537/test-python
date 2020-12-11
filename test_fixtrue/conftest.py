@@ -16,9 +16,9 @@ with open(yaml_file_path, encoding='utf-8') as f:
 @pytest.fixture()
 def get_calc():
     calc = Calculator()
-    print('测试开始')
+    print('开始计算')
     yield calc
-    print('测试结束')
+    print('结束')
 
 
 @pytest.fixture(params=add_dates, ids=addmyid_dates)
