@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntest_calc.py:21: AssumptionFailure\n>>\tpytest.assume(result == get_add_dates[2])\nAssertionError: assert False",
+      "children" : [ {
+        "name" : "test_one[nag]",
+        "uid" : "3a97d2476fe558f8",
+        "parentUid" : "de67261b8012162f6efaea1b098a8a00",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607844301510,
+          "stop" : 1607844301509,
+          "duration" : -1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, 0.2, 0.3]" ]
+      }, {
+        "name" : "test_one[错误]",
+        "uid" : "dae2845016d1c5f9",
+        "parentUid" : "de67261b8012162f6efaea1b098a8a00",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607844302626,
+          "stop" : 1607844302625,
+          "duration" : -1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "['错误', 1, '空格']" ]
+      } ],
+      "uid" : "de67261b8012162f6efaea1b098a8a00"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

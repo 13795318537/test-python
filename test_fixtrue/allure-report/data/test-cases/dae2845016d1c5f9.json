@@ -1,0 +1,161 @@
+{
+  "uid" : "dae2845016d1c5f9",
+  "name" : "test_one[错误]",
+  "fullName" : "test_calc.TestCalc#test_one",
+  "historyId" : "f88c4016b35947aa88e73f135ba1f062",
+  "time" : {
+    "start" : 1607844302626,
+    "stop" : 1607844302625,
+    "duration" : -1
+  },
+  "status" : "failed",
+  "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntest_calc.py:21: AssumptionFailure\n>>\tpytest.assume(result == get_add_dates[2])\nAssertionError: assert False",
+  "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               test_calc.py:21: AssumptionFailure\nE               >>\tpytest.assume(result == get_add_dates[2])\nE               AssertionError: assert False\n\n..\\..\\..\\AppData\\Roaming\\Python\\Python38\\site-packages\\six.py:702: FailedAssumption",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1607844302625,
+      "stop" : 1607844302626,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_add_dates",
+    "time" : {
+      "start" : 1607844302626,
+      "stop" : 1607844302626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntest_calc.py:21: AssumptionFailure\n>>\tpytest.assume(result == get_add_dates[2])\nAssertionError: assert False",
+    "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               test_calc.py:21: AssumptionFailure\nE               >>\tpytest.assume(result == get_add_dates[2])\nE               AssertionError: assert False\n\n..\\..\\..\\AppData\\Roaming\\Python\\Python38\\site-packages\\six.py:702: FailedAssumption",
+    "steps" : [ {
+      "name" : "此处为第二个执行",
+      "time" : {
+        "start" : 1607844302626,
+        "stop" : 1607844302626,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8e0f6972dc7bb11e",
+      "name" : "stdout",
+      "source" : "8e0f6972dc7bb11e.txt",
+      "type" : "text/plain",
+      "size" : 128
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1607844302654,
+      "stop" : 1607844302654,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "类的allure"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=1, reruns_delay=1)"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "add"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-2NSHDHR9"
+  }, {
+    "name" : "thread",
+    "value" : "4024-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_add_dates",
+    "value" : "['错误', 1, '空格']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c47351f2a964e776",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntest_calc.py:21: AssumptionFailure\n>>\tpytest.assume(result == get_add_dates[2])\nAssertionError: assert False",
+      "time" : {
+        "start" : 1607844301584,
+        "stop" : 1607844301582,
+        "duration" : -2
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "add", "run(order=2)", "flaky(reruns=1, reruns_delay=1)" ]
+  },
+  "source" : "dae2845016d1c5f9.json",
+  "parameterValues" : [ "['错误', 1, '空格']" ]
+}

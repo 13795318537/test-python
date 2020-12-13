@@ -1,0 +1,81 @@
+[ {
+  "uid" : "dae2845016d1c5f9",
+  "name" : "test_one[错误]",
+  "time" : {
+    "start" : 1607844302626,
+    "stop" : 1607844302625,
+    "duration" : -1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a97d2476fe558f8",
+  "name" : "test_one[nag]",
+  "time" : {
+    "start" : 1607844301510,
+    "stop" : 1607844301509,
+    "duration" : -1
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2624ea8ca5453cd",
+  "name" : "test_two[join zero]",
+  "time" : {
+    "start" : 1607844300411,
+    "stop" : 1607844300419,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6288066d42fb9ff6",
+  "name" : "test_one[join zero]",
+  "time" : {
+    "start" : 1607844301561,
+    "stop" : 1607844301571,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1715cb2301f3b6e4",
+  "name" : "test_one[float]",
+  "time" : {
+    "start" : 1607844300452,
+    "stop" : 1607844300459,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22025afe11b48380",
+  "name" : "test_one[int]",
+  "time" : {
+    "start" : 1607844300429,
+    "stop" : 1607844300437,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4617d681bf948c7",
+  "name" : "test_two[float]",
+  "time" : {
+    "start" : 1607844300395,
+    "stop" : 1607844300401,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "935c78f355374102",
+  "name" : "test_two[int]",
+  "time" : {
+    "start" : 1607844300288,
+    "stop" : 1607844300381,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
