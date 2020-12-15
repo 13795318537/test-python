@@ -7,17 +7,16 @@ class TestCalc:
     @pytest.mark.add
     @pytest.mark.run(order=2)
     # @pytest.mark.parametrize(('a', 'b', 'exp'), add_dates, ids=addmyid_dates)
-    def test_one(self, get_calc, get_add_dates):
+    def test_one(self, get_add_dates, get_calc):
         with allure.step('此处为第二个执行'):
             pass
         result = None
         try:
             result = get_calc.add(get_add_dates[0], get_add_dates[1])
-
+            if isinstance(result, float):
+                assert round(result, len(str(get_add_dates[2]).split(".")[1]))
         except Exception as e:
             print(e)
-        if isinstance(result, float):
-            assert round(result, 2) == get_add_dates[2]
         pytest.assume(result == get_add_dates[2])
 
     @pytest.mark.div
