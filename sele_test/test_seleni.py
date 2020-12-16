@@ -36,4 +36,5 @@ class Test_qywx():
         self.driver.find_element_by_id('memberAdd_acctid').send_keys('103')
         # self.driver.find_element_by_css_selector('#js_contacts101 > div > div.member_colRight > div > div:nth-child(4) > div > form > div.member_edit_formWrap > div:nth-child(1) > div.member_edit_item.member_edit_item_Radios > div.member_edit_item_right > label:nth-child(2) > input').click()
         self.driver.find_element_by_id('memberAdd_phone').send_keys('13299990000')
-        # self.driver.find_element_by_link_text('保存并继续添加').click()
+        self.driver.find_element_by_link_text('保存并继续添加').click()
+        self.driver.quit()
