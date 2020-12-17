@@ -1,17 +1,17 @@
 import yaml
 from selenium import webdriver
 import time
-
+from selenium.webdriver import ActionChains
 
 class Test_qywx():
     def setup_class(self):
         print('开始测试')
 
-    def test_get_cookic(self):
+    def test_get_cookie(self):
         opt = webdriver.ChromeOptions()
         opt.debugger_address = "127.0.0.1:9222"
         self.driver = webdriver.Chrome(options=opt)
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(10)
         cookie = self.driver.get_cookies()
         with open('data.yaml', 'w', encoding='utf-8') as f:
             ys = yaml.safe_dump(cookie, f)
@@ -33,8 +33,8 @@ class Test_qywx():
         time.sleep(3)
         self.driver.find_element_by_link_text('添加成员').click()
         self.driver.find_element_by_id('username').send_keys('测试9')
-        self.driver.find_element_by_id('memberAdd_acctid').send_keys('103')
-        # self.driver.find_element_by_css_selector('#js_contacts101 > div > div.member_colRight > div > div:nth-child(4) > div > form > div.member_edit_formWrap > div:nth-child(1) > div.member_edit_item.member_edit_item_Radios > div.member_edit_item_right > label:nth-child(2) > input').click()
-        self.driver.find_element_by_id('memberAdd_phone').send_keys('13299990000')
+        self.driver.find_element_by_id('memberAdd_acctid').send_keys('191003')
+        self.driver.find_element_by_xpath('//input[@type="radio" and @value="2"]').click()
+        self.driver.find_element_by_id('memberAdd_phone').send_keys('19911112222')
         self.driver.find_element_by_link_text('保存并继续添加').click()
         self.driver.quit()
