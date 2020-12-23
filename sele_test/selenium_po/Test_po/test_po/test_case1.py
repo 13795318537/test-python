@@ -10,4 +10,4 @@ class TestLogin:
         pass
 
     def test_login(self):
-        self.main.goto_contact_page()
+        self.main.goto_contact_page().click_add_member().add_member().get_member()

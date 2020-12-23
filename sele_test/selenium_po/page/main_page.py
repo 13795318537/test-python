@@ -13,5 +13,3 @@ class MainPage():
         self.driver.find_element_by_xpath('//*[@id="menu_contacts"]/span').click()
 
         return ContactPage()
-
-
