@@ -1,3 +1,5 @@
+import pytest
+
 from sele_test.selenium_po.page.main_page import MainPage
 
 
@@ -9,6 +11,10 @@ class TestLogin:
     def teardown(self):
         pass
 
-    def test_login(self):
-        namelist = self.main.goto_contact_page().click_add_member().add_member().get_member()
-        assert "7111235" in namelist
+    @pytest.mark.parametrize("name, id, phone", [('ddd1', 'id111', '13100001111')])
+    def test_login(self, name, id, phone):
+        # name = '5544'
+        # id = 'wreterte'
+        # phone = '13299991111'
+        namelist = self.main.goto_contact_page().click_add_member().add_member(name, id, phone).get_member()
+        assert name in namelist
