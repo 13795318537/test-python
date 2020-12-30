@@ -5,17 +5,17 @@ from sele_test.selenium_po.page.contact_page import ContactPage
 
 
 class AddMemberPage(BasePage):
+    _namea = (By.ID, "username")
+    _ida = (By.ID, "memberAdd_acctid")
+    _phonea = (By.ID, "memberAdd_phone")
 
     def add_member(self, name, id, phone):
-        _namea = (By.ID, "username")
-        _ida = (By.ID, "memberAdd_acctid")
-        _phonea = (By.ID, "memberAdd_phone")
 
-        self.driver.find(*self.namea).send_keys(name)
-        self.driver.find(*self.ida).send_keys(id)
-        self.driver.find(By.CSS_SELECTOR, '//input[@type="radio" and @value="2"]').click()
-        self.driver.find(*self.phonea).send_keys(phone)
-        self.driver.find(By.LINK_TEXT, '保存').click()
+        self.find(*self._namea).send_keys(name)
+        self.find(*self._ida).send_keys(id)
+        self.find(By.XPATH, '//input[@type="radio" and @value="2"]').click()
+        self.find(*self._phonea).send_keys(phone)
+        self.find(By.LINK_TEXT, '保存').click()
         return ContactPage(self.driver)
 
     # def add_member_fail(self):

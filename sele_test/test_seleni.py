@@ -52,8 +52,7 @@ class Test_qywx():
         self.driver.find_element_by_id('memberAdd_phone').send_keys('10911112222')
         self.driver.find_element_by_link_text('保存并继续添加').click()
         time.sleep(2)
-        eles = self.driver.find_element_by_css_selector('.member_colRight_memberTable_td:nth-child(2)')
-
+        eles = self.driver.find_elements_by_css_selector('.member_colRight_memberTable_td:nth-child(2)')
         name_list = []
         for values in eles:
             name_list.append(values.get_attribute("title"))

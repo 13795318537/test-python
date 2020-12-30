@@ -1,123 +1,103 @@
-- domain: .baidu.com
-  expiry: 1608863666
+- domain: .work.weixin.qq.com
   httpOnly: true
-  name: yjs_js_security_passport
+  name: wwrtx.vst
   path: /
   secure: false
-  value: 32bcc021d94c60943411750c74ca9ffa4e928022_1608777273_js
-- domain: .baidu.com
-  expiry: 1608950065
+  value: h8zkdkrUa-Bk6pHyQw70DHOlyD2PBmj7pU9VrXf7BIkjd2kjNND50iUxSpXzIXtOH8RjtSzF_aJ-jMCT8xH5BTqc_8Z9JkEj2YdFYan8UBakdTQh0eEIwN5CaZe5cMuO5aWl-Ol4QFlPdk1IYToAUTQDRvXrgKBnuprxZONcIILeANyLb9s0mefF0dwYbIafmUN3qUAsyTqOCpn2rAmPFwLGmnuf4VAteQm1vPpWbFyiEqcPWB6T2YiqdHc6WPWbOdovWW18HS6ZtcukSfC_kg
+- domain: .work.weixin.qq.com
   httpOnly: false
-  name: __yjsv5_shitong
+  name: wwrtx.vid
   path: /
   secure: false
-  value: 1.0_7_d0044ed977afb530d8e6ad3df61510249d7a_300_1608777272087_117.186.233.146_3cd321c6
-- domain: .fanyi.baidu.com
+  value: '1688850579086040'
+- domain: .work.weixin.qq.com
   httpOnly: false
-  name: Hm_lpvt_64ecd82404c51e03dc91cb9e8c025574
+  name: wxpay.vid
   path: /
   secure: false
-  value: '1608777264'
-- domain: .baidu.com
-  expiry: 1608780638
+  value: '1688850579086040'
+- domain: .work.weixin.qq.com
   httpOnly: false
-  name: BA_HECTOR
+  name: wxpay.corpid
   path: /
   secure: false
-  value: 24a1a5a021a400a5j81fu7vae0r
-- domain: .baidu.com
+  value: '1970325017206441'
+- domain: .work.weixin.qq.com
   httpOnly: false
-  name: PSINO
+  name: wwrtx.d2st
   path: /
   secure: false
-  value: '3'
-- domain: .baidu.com
+  value: a1683962
+- domain: .qq.com
+  expiry: 1609405534
   httpOnly: false
-  name: H_PS_PSSID
+  name: _gid
   path: /
   secure: false
-  value: '1427_33330_33306_33259_31254_32974_33343_33313_33312_33169_33311_33310_33338_33309_33308_33307_33264_33389_33382'
-- domain: .baidu.com
-  expiry: 1608784465
+  value: GA1.2.2107799484.1609313277
+- domain: work.weixin.qq.com
+  expiry: 1609344811
   httpOnly: true
-  name: ab_sr
+  name: ww_rtkey
   path: /
-  sameSite: None
-  secure: true
-  value: 1.0.0_YTVlYjhhNDJiNmY2YTIxOGFhOTFjOGE4ZDcwMmYxNDg4ZjYxNWEyYzA3MjA2MzIxYWExMGQ5NGMyNDcxNWFmYmE3ZjNkMzY4MDFiMzE5OWE1MTM4ZjQ1YjBjZDRjMmI3
-- domain: fanyi.baidu.com
-  expiry: 1694424791
-  httpOnly: false
-  name: HISTORY_SWITCH
+  secure: false
+  value: mh32h0
+- domain: .work.weixin.qq.com
+  httpOnly: true
+  name: wwrtx.refid
+  path: /
+  secure: false
+  value: '24647911571680508'
+- domain: .work.weixin.qq.com
+  httpOnly: true
+  name: wwrtx.sid
+  path: /
+  secure: false
+  value: MXEke1B2X5UCWXwXwacbrBw5JH54OlItsfdGN55zrAi9DXRGgn2bhCjlGVkXfehU
+- domain: .work.weixin.qq.com
+  httpOnly: true
+  name: wwrtx.ltype
   path: /
   secure: false
   value: '1'
-- domain: .baidu.com
+- domain: .qq.com
+  expiry: 2147385600
   httpOnly: false
-  name: delPer
+  name: pgv_pvid
+  path: /
+  secure: false
+  value: '5085480971'
+- domain: .work.weixin.qq.com
+  expiry: 1640683196
+  httpOnly: false
+  name: Hm_lvt_9364e629af24cb52acc78b43e8c9f77d
+  path: /
+  secure: false
+  value: '1609147197'
+- domain: .work.weixin.qq.com
+  httpOnly: true
+  name: wwrtx.ref
+  path: /
+  secure: false
+  value: direct
+- domain: .work.weixin.qq.com
+  expiry: 1611911397
+  httpOnly: false
+  name: wwrtx.i18n_lan
+  path: /
+  secure: false
+  value: zh
+- domain: .qq.com
+  expiry: 1672391134
+  httpOnly: false
+  name: _ga
+  path: /
+  secure: false
+  value: GA1.2.1682167373.1608096996
+- domain: .work.weixin.qq.com
+  expiry: 1639632966
+  httpOnly: false
+  name: wwrtx.c_gdpr
   path: /
   secure: false
   value: '0'
-- domain: .baidu.com
-  expiry: 1608863662
-  httpOnly: false
-  name: BDORZ
-  path: /
-  secure: false
-  value: B490B5EBF6F3CD402E515D22BCDA1598
-- domain: fanyi.baidu.com
-  expiry: 1694424791
-  httpOnly: false
-  name: FANYI_WORD_SWITCH
-  path: /
-  secure: false
-  value: '1'
-- domain: fanyi.baidu.com
-  expiry: 1694424791
-  httpOnly: false
-  name: SOUND_PREFER_SWITCH
-  path: /
-  secure: false
-  value: '1'
-- domain: fanyi.baidu.com
-  expiry: 1694424791
-  httpOnly: false
-  name: SOUND_SPD_SWITCH
-  path: /
-  secure: false
-  value: '1'
-- domain: .fanyi.baidu.com
-  expiry: 1640313263
-  httpOnly: false
-  name: Hm_lvt_64ecd82404c51e03dc91cb9e8c025574
-  path: /
-  secure: false
-  value: 1608709859,1608777043,1608777165,1608777264
-- domain: fanyi.baidu.com
-  expiry: 1694424791
-  httpOnly: false
-  name: REALTIME_TRANS_SWITCH
-  path: /
-  secure: false
-  value: '1'
-- domain: .baidu.com
-  expiry: 1638931563
-  httpOnly: false
-  name: BAIDUID
-  path: /
-  secure: false
-  value: E2EE60138962B84F0DE54B30E48A5ECE:FG=1
-- domain: .baidu.com
-  expiry: 3754879210
-  httpOnly: false
-  name: PSTM
-  path: /
-  secure: false
-  value: '1607395565'
-- domain: .baidu.com
-  expiry: 3754879210
-  httpOnly: false
-  name: BIDUPSID
-  path: /
-  secure: false
-  value: E2EE60138962B84F8D520E82216FE2CF

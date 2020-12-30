@@ -8,6 +8,6 @@ class MainPage(BasePage):
     base_url = "https://work.weixin.qq.com/wework_admin/frame"
 
     def goto_contact_page(self):
-        self.find(By.ID, '//*[@id="menu_contacts"]/span').click()
+        self.find(By.ID, 'menu_contacts').click()
 
         return ContactPage(self.driver)
