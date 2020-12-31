@@ -18,3 +18,8 @@ class TestLogin:
         # phone = '13299991111'
         namelist = self.main.goto_contact_page().click_add_member().add_member(name, id, phone).get_member()
         assert name in namelist
+
+    @pytest.mark.parametrize("name, id, phone", [("w2", "w2", "13099998888")])
+    def test_login2(self, name, id, phone):
+        namelist = self.main.main_add_member().add_member(name, id, phone).get_member()
+        assert name in namelist
