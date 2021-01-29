@@ -39,7 +39,7 @@ class TestReq:
             'access_token': self.token
         }
         payload = {
-            "tagid": 25,
+            "tagid": 41,
             "tagname": "UI111"
         }
         r = requests.request(method='post', url=url, params=access_token, json=payload)
