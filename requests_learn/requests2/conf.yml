@@ -1,0 +1,15 @@
+titlesecret: nfsyvLVCC1Kf0so6XEOQXYKv9j7eJyOYgF4b5n5sdno
+
+create_dates:
+  create:
+    - ["pythonone", 600, 600]
+
+  myid:
+    - "正常创建"
+
+updata_datas:
+  updata:
+    - ['python000', 600]
+
+  myid:
+    - "正常更新"

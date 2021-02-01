@@ -1,4 +1,3 @@
-import requests
 from requests_learn.requests2.wework import WeWork
 
 
