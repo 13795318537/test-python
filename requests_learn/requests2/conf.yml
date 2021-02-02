@@ -2,14 +2,28 @@ titlesecret: nfsyvLVCC1Kf0so6XEOQXYKv9j7eJyOYgF4b5n5sdno
 
 create_dates:
   create:
-    - ["pythonone", 600, 600]
+    - ["测试21", 3001, 3001]
 
   myid:
     - "正常创建"
 
 updata_datas:
   updata:
-    - ['python000', 600]
+    - ['python011', 600]
 
   myid:
     - "正常更新"
+
+delete_datas:
+  delete:
+    - [111]
+
+  myid:
+    - "正常删除"
+
+check1_datas:
+  check1:
+    - 38
+
+  myid:
+    - "查询"
