@@ -2,10 +2,12 @@ titlesecret: nfsyvLVCC1Kf0so6XEOQXYKv9j7eJyOYgF4b5n5sdno
 
 create_dates:
   create:
-    - ["测试21", 3001, 3001]
+    - ["测试22", 1000, 1000]
+    - ['测试33', 1000, 1000]
 
   myid:
     - "正常创建"
+    - "重复ID"
 
 updata_datas:
   updata:

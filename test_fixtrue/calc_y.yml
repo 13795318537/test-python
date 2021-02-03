@@ -6,7 +6,7 @@ add:
     - [0, 3, 3]
     - ["错误", 1, "空格"]
   myid:
-    - 'int'
+    - '单数'
     - 'float'
     - 'nag'
     - 'join zero'
