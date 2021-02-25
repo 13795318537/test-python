@@ -1,6 +1,7 @@
 import pytest
 import allure
 
+
 @allure.feature('类的allure')
 class TestCalc:
     @pytest.mark.flaky(reruns=1, reruns_delay=1)

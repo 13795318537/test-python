@@ -3,7 +3,7 @@ import os
 import pytest
 import yaml
 from requests_learn.requests2.title import Title_Api
-
+from jsonpath import jsonpath
 
 yaml_file_path = os.path.dirname(__file__) + "/conf.yml"
 
@@ -30,12 +30,23 @@ class Test_title():
         r = self.title.create_title(tagname, tagid)
         r1 = self.title.get_title_list()
         # assert r1['taglist'][-1]['tagid'] == 49
+        as_l = jsonpath(r1, '$..tagid')
+        print(as_l)
+        print(r1)
         ass_tagid = self.title.jsonpath_res(r1, f"$..taglist[?(@.tagid== {as_tagid})].tagid")[0]
         print(ass_tagid)
+
         if r['errcode'] == 0:
             assert ass_tagid == as_tagid
         else:
-            r['errcode'] == 40068
+            print('错误')
+        # print(r)
+
+
+
+
+        # else:
+        #     r['errcode'] == 40068
 
     @pytest.mark.parametrize(("tagname", "tagid"), updata_data, ids=updata_myid)
     def test_case_update(self, tagname, tagid):

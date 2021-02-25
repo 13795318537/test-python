@@ -1,6 +1,6 @@
 import pytest
 import requests
-
+from jsonpath import jsonpath
 
 class TestReq:
 
@@ -15,7 +15,7 @@ class TestReq:
         print(r.json())
         assert r.json()['errcode'] == 0
 
-    @pytest.mark.parametrize("tagname,tagid", [('python11', 31)])
+    @pytest.mark.parametrize("tagname,tagid", [('python116', 311)])
     def test_create_title(self, tagname, tagid):
         url = 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'
         token = {'access_token': self.token}
@@ -30,6 +30,8 @@ class TestReq:
             'access_token': self.token
         }
         r1 = requests.request(method='get', url=url1, params=params)
+        ass_list = jsonpath(r1, "$..tagid")
+        print(ass_list)
         assert r1.json()['taglist'][-1]['tagid'] == 31
         assert r.json()['errcode'] == 0
 
