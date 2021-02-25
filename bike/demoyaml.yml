@@ -1,0 +1,10 @@
+E1: &daf1
+  dianliang : 10
+  run_km : 101
+
+E2: &daf2
+  dianliang: 10
+  run_km: 300
+
+dafaul :
+  <<: *daf2

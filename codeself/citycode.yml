@@ -1,0 +1,12 @@
+city:
+  ccode:
+    - ['10001']
+
+qq:
+  code:
+    - ['caf1ec6df73d23aaa362a12b12f54777','932571861']
+    - ['caf1ec6df73d23aaa362a12b12f54777','']
+
+  myid:
+    - "我的qq"
+    - "wuQQ"
