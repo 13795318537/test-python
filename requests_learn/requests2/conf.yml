@@ -1,14 +1,15 @@
 titlesecret: nfsyvLVCC1Kf0so6XEOQXYKv9j7eJyOYgF4b5n5sdno
 
 create_dates:
+# 1.名称 2.id 3.效验用id或返回报错码 4.jsonpath用id
   create:
-    - ['测试123', 20123, 20123]
-#    - ['测试34', 1000, 10001]
-
+#    - ['test3201', 3201, 3201, 3201]
+    - ['bbb005', '', 40071, 904]
+    - ['', 5000, 40072, 5000]
   myid:
-    - "正常创建"
-#    - "重复ID"
-
+#    - "正常创建"
+    - "重复ID"
+    - "名称为空"
 
 
 

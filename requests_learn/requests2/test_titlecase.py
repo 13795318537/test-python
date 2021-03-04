@@ -1,3 +1,4 @@
+#coding: utf-8
 import json
 import os
 import pytest
@@ -25,28 +26,28 @@ class Test_title():
         secret = conf["titlesecret"]
         self.title = Title_Api(secret)
 
-    @pytest.mark.parametrize(("tagname", "tagid", "as_tagid"), create_date, ids=create_myid)
-    def test_case_create(self, tagname, tagid, as_tagid):
+    @pytest.mark.flaky(reruns=3, reruns_delay=2)
+    @pytest.mark.add
+    @pytest.mark.parametrize(("tagname", "tagid", "as_tagid", "jp_tagid"), create_date, ids=create_myid)
+    def test_case_create(self, tagname, tagid, as_tagid, jp_tagid):
         r = self.title.create_title(tagname, tagid)
         r1 = self.title.get_title_list()
         # assert r1['taglist'][-1]['tagid'] == 49
-        as_l = jsonpath(r1, '$..tagid')
-        print(as_l)
+        # as_l = jsonpath(r1, '$..tagid')
+        # print(as_l)
+        print(r)
         print(r1)
-        ass_tagid = self.title.jsonpath_res(r1, f"$..taglist[?(@.tagid== {as_tagid})].tagid")[0]
-        print(ass_tagid)
-
         if r['errcode'] == 0:
-            assert ass_tagid == as_tagid
+            ass_tagid = self.title.jsonpath_res(r1, f"$..taglist[?(@.tagid== {jp_tagid})].tagid")
+            if r['tagid'] == as_tagid:
+                print(ass_tagid)
+                assert as_tagid in ass_tagid
+            else:
+                assert r['errcode'] == 0
+                assert r['errmsg'] == 'created'
         else:
-            print('错误')
-        # print(r)
+            assert r['errcode'] == as_tagid
 
-
-
-
-        # else:
-        #     r['errcode'] == 40068
 
     @pytest.mark.parametrize(("tagname", "tagid"), updata_data, ids=updata_myid)
     def test_case_update(self, tagname, tagid):
