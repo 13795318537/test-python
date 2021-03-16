@@ -1,8 +1,8 @@
 import os
-from jsonpath import jsonpath
-import json
+import time
 import pytest
 import yaml
+import allure
 
 from codeself.query import QueryApi
 
@@ -14,20 +14,26 @@ with open(yaml_file_path, encoding='utf-8') as f:
     qqcode = dates['qq']['code']
     qqid = dates['qq']['myid']
 
-
+@allure.feature("测试类1")
 class Testyiqin(QueryApi):
     def setup_class(self):
         self.query = QueryApi()
 
+
+    @allure.story("测试方法1")
+    @pytest.mark.repeat(3)
     @pytest.mark.parametrize('cc', citycode)
     def test_anhui(self, cc):
+        with allure.step('步骤1'):
+            print("buzhou1")
         r = self.s_query()
         # print(r)
         ass_list = self.query.jsonpath_res(r, "$..city_id")
         print(ass_list)
-        assert cc not in ass_list
+        assert cc in ass_list
         assert r['reason'] == 'success!'
 
+    @allure.story("测试方法12")
     @pytest.mark.parametrize(('key', 'qq'), qqcode, ids=qqid)
     def test_qq1(self, key, qq):
         r = self.qq_yun(key, qq)

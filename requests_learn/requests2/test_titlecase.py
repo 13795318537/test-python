@@ -1,4 +1,4 @@
-#coding: utf-8
+# -- coding: utf-8 --
 import json
 import os
 import pytest
@@ -18,7 +18,6 @@ with open(yaml_file_path, encoding='utf-8') as f:
     delete_myid = dates['delete_datas']['myid']
     check1_data = dates['check1_datas']['check1']
     check1_myid = dates['check1_datas']['myid']
-
 
 class Test_title():
     def setup_class(self):
